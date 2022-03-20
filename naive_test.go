@@ -10,13 +10,13 @@ func TestNaive(t *testing.T) {
 	for _, c := range cases {
 		c := c
 		t.Run(fmt.Sprintf("s = %d, n = %d, m = %d", c.s, c.n, c.m), func(t *testing.T) {
-			assert.Equal(t, c.expected, naive(c.s, c.n, c.m))
+			assert.Equal(t, c.expected, Naive(c.s, c.n, c.m))
 		})
 	}
 }
 
 func BenchmarkNaive(b *testing.B) {
 	for n := 0; n < b.N; n++ {
-		naive(6, 10, 31)
+		Naive(6, 10, 31)
 	}
 }

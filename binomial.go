@@ -1,6 +1,6 @@
 package main
 
-func binomial(s, n, m int) int {
+func Binomial(s, n, m int) int {
 	result := 0
 	i := 0
 	for s*i <= m-n {

@@ -1,6 +1,6 @@
 package main
 
-func naive(s, n, m int) int {
+func Naive(s, n, m int) int {
 	values := make([]int, s)
 	for i := 0; i < len(values); i++ {
 		values[i] = i + 1

@@ -10,13 +10,13 @@ func TestBinomial(t *testing.T) {
 	for _, c := range cases {
 		c := c
 		t.Run(fmt.Sprintf("s = %d, n = %d, m = %d", c.s, c.n, c.m), func(t *testing.T) {
-			assert.Equal(t, c.expected, binomial(c.s, c.n, c.m))
+			assert.Equal(t, c.expected, Binomial(c.s, c.n, c.m))
 		})
 	}
 }
 
 func BenchmarkBinomial(b *testing.B) {
 	for n := 0; n < b.N; n++ {
-		binomial(6, 10, 31)
+		Binomial(6, 10, 31)
 	}
 }
