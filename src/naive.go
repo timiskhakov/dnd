@@ -8,7 +8,7 @@ func Naive(s, n, m int) int {
 
 	state := make([]int, n)
 	for i := 0; i < len(state); i++ {
-		state[i] = i + 1
+		state[i] = 1
 	}
 
 	return bruteforce(values, state, n, 0, m)
