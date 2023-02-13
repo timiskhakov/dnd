@@ -23,7 +23,7 @@ func Cache(s, n, m int) int {
 
 	result := 0
 	for i := 1; i <= s; i++ {
-		result += Smart(s, n-1, m-i)
+		result += Cache(s, n-1, m-i)
 	}
 
 	cache[item{s, n, m}] = result
