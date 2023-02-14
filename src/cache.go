@@ -1,9 +1,7 @@
 package main
 
 type item struct {
-	s int
-	n int
-	m int
+	s, n, m int
 }
 
 var cache = make(map[item]int)
